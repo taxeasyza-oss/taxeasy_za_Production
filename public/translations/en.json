@@ -1,0 +1,6 @@
+{
+    "greeting": "Welcome to TaxEasy ZA",
+    "occupation_label": "Your Occupation",
+    "calculate_btn": "Calculate Tax",
+    "tooltip_income": "Enter gross annual income before deductions"
+}

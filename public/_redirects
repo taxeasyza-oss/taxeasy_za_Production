@@ -1,0 +1,4 @@
+/js/*          /js/:splat     200
+/faq           /index.html    200
+/efiling-guide /index.html    200
+/*             /index.html    200
