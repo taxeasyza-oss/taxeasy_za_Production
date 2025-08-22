@@ -39,6 +39,26 @@ document.addEventListener('DOMContentLoaded', () => {
           console.error('Calculation error:', e);
         }
       });
+      
+      // Handle SPA navigation
+      function handleRoute() {
+        const path = window.location.pathname;
+        console.log('Routing to:', path);
+        // Add actual content loading logic here
+      }
+      
+      // Event listeners for navigation
+      window.addEventListener('popstate', handleRoute);
+      document.addEventListener('click', e => {
+        if (e.target.tagName === 'A' && e.target.href.startsWith(window.location.origin)) {
+          e.preventDefault();
+          history.pushState(null, '', e.target.href);
+          handleRoute();
+        }
+      });
+      
+      // Initial route handling
+      handleRoute();
     });
 
     // Initialize language
