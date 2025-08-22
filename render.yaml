@@ -1,0 +1,9 @@
+ 
+services: 
+  - type: web 
+    name: taxeasyza-production 
+    plan: free 
+    region: eu 
+    env: static 
+    staticPublishPath: ./public 
+    autoDeploy: true
